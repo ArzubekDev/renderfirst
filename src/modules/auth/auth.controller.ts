@@ -1,6 +1,6 @@
 import type { Request, Response } from "express";
 
-const getAllUsers = (req: Request, res: Response) => {
+const postUsers = async (req: Request, res: Response) => {
 try {
     res.status(200).json({
         success: true,
@@ -14,5 +14,5 @@ try {
 }
 
 export default {
-    getAllUsers
+    postUsers
 }
